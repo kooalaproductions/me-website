@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: legoTheme;
+    src: url("./legothick-webfont.woff"),url("./legothick-webfont.woff2");
+    font-weight: bold;
+   
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url(../images/lego-background.jpg);
+}
+
+.header-home-welcome{
+    padding-top: 25%;
+    font-family:legoTheme;
+    font-size: 100px;
+    color: white;
+}
+
