@@ -1,0 +1,13 @@
+
+.row-container{
+    max-width: 100%;
+    padding: 15%;
+}
+.card{
+    text-align: left;
+    width: 20rem;
+}
+
+.button-container{
+   text-align: center;
+}
