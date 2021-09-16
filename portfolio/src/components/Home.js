@@ -17,6 +17,7 @@ class Home extends Component{
                     <Row>
                     <Navigation></Navigation>
                     </Row>   
+                    <Row></Row>
                     <Row>
                         <h1 className="header-home-welcome">WELCOME TO MY PORTFOLIO</h1>
                     </Row>

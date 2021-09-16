@@ -3,6 +3,7 @@
     font-family: legoTheme;
     src: url("./legothick-webfont.woff"),url("./legothick-webfont.woff2");
     font-weight: bold;
+
    
 }
 body, html {
@@ -16,5 +17,6 @@ body, html {
     font-family:legoTheme;
     font-size: 100px;
     color: white;
+    
 }
 
