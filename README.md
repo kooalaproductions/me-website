@@ -2,6 +2,14 @@
 
 ## Installation
 
+To install all dependencies:
+
+```
+
+npm install -a
+
+```
+
 React Router Dom used to switch between page components
 
 ```

@@ -5,9 +5,17 @@
 }
 .card{
     text-align: left;
-    width: 20rem;
+    width: 25rem;
+    height: 100%;
+}
+.card-row{
+    margin-top:15%;
 }
 
+.card-text{
+    padding: 10px;
+}
 .button-container{
    text-align: center;
+   /* padding-top: 10px; */
 }

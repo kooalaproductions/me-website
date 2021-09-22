@@ -8,6 +8,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/projects.css';
+import mheelsImage from '../images/mheels-pic.png';
+import beermeImage from '../images/beerme-pic.png';
+import pregameImage from '../images/pre-game-pic.png';
+import trainImage from '../images/train-pic.png';
 
 
 
@@ -21,11 +25,11 @@ class Projects extends Component{
                     <Navigation></Navigation>
                     </Row>   
                     <Container className="row-container">
-                    <Row v>
+                    <Row className="card-row">
                         
                             <Col>
                             <Card>
-                                <Card.Img variant="top" src="holder.js/100px160" />
+                                <Card.Img variant="top" src={mheelsImage}/>
                                 <Card.Body>
                                 <Card.Title>Mheels</Card.Title>
                                 <Card.Text>
@@ -41,11 +45,11 @@ class Projects extends Component{
                             </Col>
                             <Col>
                             <Card>
-                                <Card.Img variant="top" src="holder.js/100px160" />
+                                <Card.Img variant="top" src={beermeImage} />
                                 <Card.Body>
                                 <Card.Title>Beer Me</Card.Title>
                                 <Card.Text>
-                                Social Media Application that helps liquour enthusiasts share their love for a certain brand of alchohol. Also provides an easy library for Alchohol you have never tried but always wanted to
+                                Social Media Application that helps liquour enthusiasts share their love for a certain brand of alchohol. 
                                 </Card.Text>
                                 <Container className="button-container">
                                 <Button onClick={()=> window.open("http://beerme-ucsd.herokuapp.com/", "_blank")}>Live Project</Button>
@@ -55,10 +59,10 @@ class Projects extends Component{
                             </Card>
                             </Col>
                         </Row>
-                        <Row v>
+                        <Row className="card-row">
                             <Col>
                             <Card>
-                                <Card.Img variant="top" src="holder.js/100px160" />
+                                <Card.Img variant="top" src={pregameImage} />
                                 <Card.Body>
                                 <Card.Title>Pre-Game</Card.Title>
                                 <Card.Text>
@@ -73,7 +77,7 @@ class Projects extends Component{
                             </Col>
                             <Col>
                             <Card>
-                                <Card.Img variant="top" src="holder.js/100px160" />
+                                <Card.Img variant="top" src={trainImage} />
                                 <Card.Body>
                                 <Card.Title>Train Scheduler</Card.Title>
                                 <Card.Text>
