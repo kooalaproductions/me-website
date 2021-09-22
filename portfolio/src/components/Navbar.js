@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-
+import $ from "jquery";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Navbar.css';
-
-
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
@@ -12,6 +10,19 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 
 class Navigation extends Component{
+
+  jQueryCode = () =>{
+    $(".home").on('click',function(){
+      console.log("jquery works");//this works
+      $(".navbar").css('background-color', 'red')//this doesnt work
+     
+     });
+   }
+   componentDidMount(){
+     this.jQueryCode()
+   }
+
+
     render(){
         return(
             
