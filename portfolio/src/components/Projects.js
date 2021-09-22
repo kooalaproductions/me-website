@@ -49,7 +49,7 @@ class Projects extends Component{
                                 <Card.Body>
                                 <Card.Title>Beer Me</Card.Title>
                                 <Card.Text>
-                                Social Media Application that helps liquour enthusiasts share their love for a certain brand of alchohol. 
+                                Social Media Application that helps liquour enthusiasts share their love for a certain brand of alchohol. They will be able to create post and read facts about alchohol.
                                 </Card.Text>
                                 <Container className="button-container">
                                 <Button onClick={()=> window.open("http://beerme-ucsd.herokuapp.com/", "_blank")}>Live Project</Button>
@@ -81,7 +81,8 @@ class Projects extends Component{
                                 <Card.Body>
                                 <Card.Title>Train Scheduler</Card.Title>
                                 <Card.Text>
-                                Application that helps the user know when the next train/trolley is coming so they can plan their day accordingly.
+                                Application that can help the user create a post of upcoming train or trolley schedules. Will create a train name, destination, train arrival and frequency.
+                                If there was a mistake the user can simply remove it.
                                 </Card.Text>
                                 <Container className="button-container">
                                 <Button onClick={()=> window.open("https://kooalaproductions.github.io/TrainTime/", "_blank")}>Live Project</Button>
