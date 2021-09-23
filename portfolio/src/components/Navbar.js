@@ -13,19 +13,34 @@ class Navigation extends Component{
 
   constructor(props) {
     super(props);
+    this.handleLoad = this.handleLoad.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
       background: '',
       color:''
   };
 
-    // This binding is necessary to make `this` work in the callback
-    this.handleClick = this.handleClick.bind(this);
   }
 
+
+ componentDidMount() {
+    window.addEventListener('load', this.handleClick);
+ }
+
+ componentWillUnmount() { 
+   window.removeEventListener('load', this.handleClick)  
+ }
+  handleLoad(){
+
+  }
   handleClick() {//this does not work bc onclick reloads page so the new changes disappear
     this.setState({background: 'green', color: 'red'});// here I want to change the color to red
-    alert('onClick works');
+    //alert('onClick works');
   }
+  /**
+   * 
+   * what needs to be done is when on windows path then change the color not on click 
+   */
     render(){
 
       const { background, color } = this.state;
