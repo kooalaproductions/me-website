@@ -1,0 +1,18 @@
+
+@font-face {
+    font-family: legoTheme;
+    src: url("./legothick-webfont.woff"),url("./legothick-webfont.woff2");
+    font-weight: bold;
+
+   
+}
+
+.contact-title{
+    padding-top: 25%;
+    font-family:legoTheme;
+    font-size: 100px;
+    color: white;
+    
+}
+
+

@@ -22,7 +22,6 @@ class Navigation extends Component{
 
   }
 
-
  componentDidMount() {
     window.addEventListener('load', this.handleClick);
  }
@@ -41,21 +40,26 @@ class Navigation extends Component{
    * 
    * what needs to be done is when on windows path then change the color not on click 
    */
+
+  
     render(){
 
       const { background, color } = this.state;
+      
         return(
             
         <Navbar bg="light" expand="lg" fixed="top">
         <Container>
           <Navbar.Brand href="/" className='header-llc'>PORTFOLIO</Navbar.Brand>
-          <GitHubIcon className="github"></GitHubIcon>
-          <LinkedInIcon className="linkedin"></LinkedInIcon>
+          <GitHubIcon className="github" onClick={()=> window.open("https://github.com/kooalaproductions", "_blank")}></GitHubIcon>
+          <LinkedInIcon className="linkedin" onClick={()=> window.open("https://www.linkedin.com/in/ernesto-sanchez-sd/", "_blank")}></LinkedInIcon>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link className='home' href="/" onClick={this.handleClick} style={{background: background, color: color}}>HOME</Nav.Link>
-              <Nav.Link className='projects' href="/projects" onClick={this.handleClick} style={{background: background, color: color}}>PROJECTS</Nav.Link>
+              {/* <Nav.Link className='home' href="/" onClick={this.handleClick} style={{background: background, color: color}}>HOME</Nav.Link> */}
+              <Nav.Link className='home' href="/">HOME</Nav.Link>
+
+              <Nav.Link className='projects' href="/projects">PROJECTS</Nav.Link>
               <Nav.Link className='about' href="/about" >ABOUT</Nav.Link>
               <Nav.Link className='contact' href="/contact" >CONTACT</Nav.Link>
 

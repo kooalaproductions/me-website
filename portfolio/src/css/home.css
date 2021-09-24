@@ -17,12 +17,22 @@ body, html{
     margin: 0;
     background-color: brown;
 }
-.header-home-welcome{
-    padding-top: 25%;
-    font-family:legoTheme;
-    font-size: 100px;
-    color: white;
+
+ .card-whole{
+    width: 100% !important;
+    margin-top: 10%;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    border-top: 50%;
+    vertical-align: middle;
+    margin-left: auto;
+  margin-right: auto;
     
 }
 
+.card-img-top{
+    width: 200px;
+}
 

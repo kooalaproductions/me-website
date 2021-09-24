@@ -24,7 +24,14 @@ class Projects extends Component{
                     <Row>
                     <Navigation></Navigation>
                     </Row>   
+                    <Container>
+                        <Row>
+                            <Col> <h1 className="projects-title">PROJECTS</h1></Col>
+                        </Row>
+                    </Container>
+                   
                     <Container className="row-container">
+                        
                     <Row className="card-row">
                         
                             <Col>

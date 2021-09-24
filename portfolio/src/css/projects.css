@@ -1,3 +1,9 @@
+@font-face {
+    font-family: legoTheme;
+    src: url("./legothick-webfont.woff"),url("./legothick-webfont.woff2");
+    font-weight: bold;
+   
+}
 
 .row-container{
     max-width: 100%;
@@ -24,4 +30,11 @@
 .btn{
     margin-right: 5%;
   
+}
+
+.projects-title{
+    padding-top: 10%;
+    font-size: 50px;
+    font-family: legoTheme;
+    color: white;
 }
