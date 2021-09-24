@@ -29,13 +29,16 @@ class Home extends Component{
                     <Navigation></Navigation>
                     </Row>   
                    
-                    <Container>
+                    <Container className='profile-container'>
                         <Row>
-                            <Col>
 
+                        <Col><Card.Img className="profile-pic" variant="top" src={portfolioPic} alt="Avatar"/></Col>
+                    
+
+                    
+                    
+                    <Col xs={8}>
                     <Card className="card-whole">
-                    <Card.Img className="profile-pic" variant="top" src={portfolioPic} alt="Avatar"/>
-                        <Card.Header>Featured</Card.Header>
                         <Card.Body>
                             <Card.Title>Ernesto Sanchez Santana</Card.Title>
                             <Card.Text>
@@ -45,9 +48,12 @@ class Home extends Component{
                             San Diego, CA
                             </Card.Text>
                         </Card.Body>
-                    </Card>
+                        </Card>
+                    </Col>
+                        
+                   
                             
-                            </Col>
+                    
                         </Row>
                     </Container>
                    
