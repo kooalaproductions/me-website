@@ -31,14 +31,12 @@ body, html{
     vertical-align: middle;
     margin-left: -30%;
   margin-right: auto;
+  width: 115%;
     
 }
 
-.card-img-top{
-    width: 115%
-}
 
-.card-body{
+.body-of-card{
     padding: 1rem 14rem;
 }
 .name-title, .school-title, .location-title{

@@ -34,7 +34,7 @@ class Home extends Component{
 
                     <Col xs={8}>
                     <Card className="card-whole">
-                        <Card.Body>
+                        <Card.Body className="body-of-card">
                             <Card.Title className='name-title'>Hello I am Ernesto Sanchez</Card.Title>
                             <Card.Text className='school-title'>
                             Bachelor of Science in Computer Science from San Diego State University
