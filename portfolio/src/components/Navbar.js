@@ -7,6 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { Link } from 'react-router-dom'
 
 
 class Navigation extends Component{
@@ -57,11 +58,25 @@ class Navigation extends Component{
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               {/* <Nav.Link className='home' href="/" onClick={this.handleClick} style={{background: background, color: color}}>HOME</Nav.Link> */}
-              <Nav.Link className='home' href="/">HOME</Nav.Link>
+              <li>
+                <Link to='/'> Home</Link>
+                </li>
+                <li>
+                <Link to='/projects'> Projects</Link>
+                </li>
+                <li>
+                <Link to='/about'> About</Link>
+                </li>
+                <li>
+                <Link to='/contact'> Contact</Link>
+                </li>
+
+              {/* <Nav.Link className='home' href="/">HOME</Nav.Link>
 
               <Nav.Link className='projects' href="/projects">PROJECTS</Nav.Link>
               <Nav.Link className='about' href="/about" >ABOUT</Nav.Link>
-              <Nav.Link className='contact' href="/contact" >CONTACT</Nav.Link>
+              <Nav.Link className='contact' href="/contact" >CONTACT</Nav.Link> */}
+
 
               
             </Nav>
