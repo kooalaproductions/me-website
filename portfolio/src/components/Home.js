@@ -30,26 +30,22 @@ class Home extends Component{
                     </Row>   
                    
                     <Container className='profile-container'>
-                        <Row>
+                        <Row className="profile-row">
 
-                        <Col><Card.Img className="profile-pic" variant="top" src={portfolioPic} alt="Avatar"/></Col>
-                    
-
-                    
-                    
                     <Col xs={8}>
                     <Card className="card-whole">
                         <Card.Body>
-                            <Card.Title>Ernesto Sanchez Santana</Card.Title>
-                            <Card.Text>
+                            <Card.Title className='name-title'>Hello I am Ernesto Sanchez</Card.Title>
+                            <Card.Text className='school-title'>
                             Bachelor of Science in Computer Science from San Diego State University
                             </Card.Text>
-                            <Card.Text>
+                            <Card.Text className='location-title'>
                             San Diego, CA
                             </Card.Text>
                         </Card.Body>
                         </Card>
                     </Col>
+                    <Col xl={4}><Card.Img className="profile-pic" variant="top" src={portfolioPic} alt="Avatar"/></Col>
                         
                    
                             

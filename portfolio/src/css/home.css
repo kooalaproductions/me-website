@@ -19,20 +19,38 @@ body, html{
 }
 
 .profile-container{
-    margin-top: 10%;
+   padding-top: 15%;
 }
  .card-whole{
     width: 100% !important;
+    background-color: transparent;
+    border: none;
 }
 
 .profile-pic{
     vertical-align: middle;
-    margin-left: auto;
+    margin-left: -30%;
   margin-right: auto;
     
 }
 
 .card-img-top{
-    width: 100%
+    width: 115%
+}
+
+.card-body{
+    padding: 1rem 14rem;
+}
+.name-title, .school-title, .location-title{
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+.name-title{
+    font-size: 50px;
+}
+.school-title{
+    font-size: 20px;
+}
+.location-title{
+    font-size: 20px;
 }
 
