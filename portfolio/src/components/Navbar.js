@@ -59,9 +59,9 @@ class Navigation extends Component{
               {/* <Nav.Link className='home' href="/" onClick={this.handleClick} style={{background: background, color: color}}>HOME</Nav.Link> */}
               <Nav.Link className='home' href="/me-website">HOME</Nav.Link>
 
-              <Nav.Link className='projects' href="/projects">PROJECTS</Nav.Link>
-              <Nav.Link className='about' href="/about" >ABOUT</Nav.Link>
-              <Nav.Link className='contact' href="/contact" >CONTACT</Nav.Link>
+              <Nav.Link className='projects' href="/me-website/projects">PROJECTS</Nav.Link>
+              <Nav.Link className='about' href="/me-website/about" >ABOUT</Nav.Link>
+              <Nav.Link className='contact' href="/me-website/contact" >CONTACT</Nav.Link>
 
               
             </Nav>

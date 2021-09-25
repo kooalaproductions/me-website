@@ -18,14 +18,14 @@ function App() {
           <Route exact path="/me-website">
             <Home></Home>
           </Route>
-          <Route exact path="/projects">
+          <Route exact path="/me-website/projects">
             <Projects></Projects>
           </Route>
 
-          <Route exact path="/about">
+          <Route exact path="/me-website/about">
            <About></About>
           </Route>
-          <Route exact path="/contact">
+          <Route exact path="/me-website/contact">
            <Contact></Contact>
           </Route>
           
