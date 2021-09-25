@@ -12,24 +12,15 @@ function App() {
     <Router>
     <div className="App">
       <div className='content'>
-        <Switch>
+        {/* <Switch> */}
 
    
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/projects">
-            <Projects></Projects>
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/projects" component={Projects}/>
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/contact" component={Contact}/>
 
-          <Route exact path="/about">
-           <About></About>
-          </Route>
-          <Route exact path="/contact">
-           <Contact></Contact>
-          </Route>
-          
-        </Switch>
+        {/* </Switch> */}
 
         </div>
     
