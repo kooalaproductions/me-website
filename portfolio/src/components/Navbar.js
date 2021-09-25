@@ -50,14 +50,14 @@ class Navigation extends Component{
             
         <Navbar bg="light" expand="lg" fixed="top">
         <Container>
-          <Navbar.Brand href="/" className='header-llc'>PORTFOLIO</Navbar.Brand>
+          <Navbar.Brand href="/me-website" className='header-llc'>PORTFOLIO</Navbar.Brand>
           <GitHubIcon className="github" onClick={()=> window.open("https://github.com/kooalaproductions", "_blank")}></GitHubIcon>
           <LinkedInIcon className="linkedin" onClick={()=> window.open("https://www.linkedin.com/in/ernesto-sanchez-sd/", "_blank")}></LinkedInIcon>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               {/* <Nav.Link className='home' href="/" onClick={this.handleClick} style={{background: background, color: color}}>HOME</Nav.Link> */}
-              <Nav.Link className='home' href="/">HOME</Nav.Link>
+              <Nav.Link className='home' href="/me-website">HOME</Nav.Link>
 
               <Nav.Link className='projects' href="/projects">PROJECTS</Nav.Link>
               <Nav.Link className='about' href="/about" >ABOUT</Nav.Link>
