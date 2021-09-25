@@ -15,17 +15,17 @@ function App() {
         <Switch>
 
    
-          <Route exact path="/me-website">
+          <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route exact path="/me-website/projects">
+          <Route exact path="/projects">
             <Projects></Projects>
           </Route>
 
-          <Route exact path="/me-website/about">
+          <Route exact path="/about">
            <About></About>
           </Route>
-          <Route exact path="/me-website/contact">
+          <Route exact path="/contact">
            <Contact></Contact>
           </Route>
           
