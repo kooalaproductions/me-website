@@ -1,30 +1,45 @@
 
-@font-face {
-    font-family: legoTheme;
-    src: url("./legothick-webfont.woff"),url("./legothick-webfont.woff2");
-    font-weight: bold;
-
-   
-}
 /* body, html {
     height: 100%;
     margin: 0;
     background-image: url(../images/lego-background.jpg);
 } */
 
+
+@font-face {
+    font-family: patrickHand;
+    src: url("./fonts/PatrickHand-Regular.woff");
+    font-weight: bold;
+   
+}
+
+@font-face {
+    font-family: rockSalt;
+    src: url("./fonts/RockSalt-Regular.woff");
+    font-weight: bold;
+   
+}
 body, html{
     height: 100%;
     margin: 0;
-    background-color: brown;
+    background-color: white;
 }
+
+.content{
+    background-image: url("../images/lakebackground.jpeg");
+}
+
 
 .profile-container{
    padding-top: 15%;
+   height: 100%;
+   
 }
  .card-whole{
     width: 100% !important;
     background-color: transparent;
     border: none;
+   
 }
 
 .profile-pic{
@@ -37,10 +52,14 @@ body, html{
 
 
 .body-of-card{
-    padding: 1rem 14rem;
+    padding: 1rem 10rem 1rem 9rem;
 }
-.name-title, .school-title, .location-title{
-    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+
+.name-title{
+    font-family: rockSalt;
+}
+ .school-title, .location-title{
+    font-family: patrickHand;
 }
 .name-title{
     font-size: 50px;
@@ -52,3 +71,6 @@ body, html{
     font-size: 20px;
 }
 
+.footer-home{
+    background-color: purple;
+}

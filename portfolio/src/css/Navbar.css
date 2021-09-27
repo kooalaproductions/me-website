@@ -1,13 +1,24 @@
 
+
 @font-face {
-    font-family: legoTheme;
-    src: url("./legothick-webfont.woff"),url("./legothick-webfont.woff2");
+    font-family: patrickHand;
+    src: url("./fonts/PatrickHand-Regular.woff");
     font-weight: bold;
    
 }
+
+@font-face {
+    font-family: rockSalt;
+    src: url("./fonts/RockSalt-Regular.woff");
+    font-weight: bold;
+   
+}
+
 .header-llc{
-    font-family: legoTheme;
+    font-family: rockSalt;
     font-size: 50px; 
+    text-decoration: none;
+    color: darkblue !important;
   
 }
 
@@ -17,32 +28,36 @@
 }
 
 .home{
-    font-family: legoTheme;
+    font-family: patrickHand;
     font-size: 30px;
     margin: 10px;
     text-decoration: none;
+    color: darkblue;
 }
 
 
 .projects{
-    font-family: legoTheme;
+    font-family: patrickHand;
     font-size: 30px;
     margin: 10px;
     text-decoration: none;
+    color: darkblue;
 }
 .about{
-    font-family: legoTheme;
+    font-family: patrickHand;
     font-size: 30px;
     margin: 10px;
     text-decoration: none;
+    color: darkblue;
     
 }
 
 .contact{
-    font-family: legoTheme;
+    font-family: patrickHand;
     font-size: 30px;
     margin: 10px;
     text-decoration: none;
+    color: darkblue;
 }
 
 .navbar {
@@ -50,10 +65,29 @@
   opacity: 0.85;
 }
 
-svg:hover,a:hover{
-    border: 2px solid black;
+a:hover{
+    border-bottom: 5px solid rgb(235, 238, 195);
+    color: rgb(197, 227, 251);
 }
 
+.header-llc:hover{
+    color: rgb(197, 227, 251) !important;
+    border-bottom: 5px solid rgb(235, 238, 195);
+}
 
+.github{
+    margin: 10px;
+    font-size: 30px;
+    color: darkblue;
+}
+
+.linkedin{
+    margin: 10px;
+    font-size: 30px;
+    color: darkblue;
+}
+svg:hover{
+    color: rgb(197, 227, 251);
+}
 
 

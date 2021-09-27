@@ -1,15 +1,8 @@
 
-@font-face {
-    font-family: legoTheme;
-    src: url("./legothick-webfont.woff"),url("./legothick-webfont.woff2");
-    font-weight: bold;
-
-   
-}
 
 .about-title{
-    padding-top: 25%;
-    font-family:legoTheme;
+    padding-top: 50%;
+  
     font-size: 100px;
     color: white;
     
