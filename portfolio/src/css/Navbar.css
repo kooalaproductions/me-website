@@ -19,23 +19,30 @@
 .home{
     font-family: legoTheme;
     font-size: 30px;
-    
+    margin: 10px;
+    text-decoration: none;
 }
 
 
 .projects{
     font-family: legoTheme;
     font-size: 30px;
+    margin: 10px;
+    text-decoration: none;
 }
 .about{
     font-family: legoTheme;
     font-size: 30px;
+    margin: 10px;
+    text-decoration: none;
     
 }
 
 .contact{
     font-family: legoTheme;
     font-size: 30px;
+    margin: 10px;
+    text-decoration: none;
 }
 
 .navbar {

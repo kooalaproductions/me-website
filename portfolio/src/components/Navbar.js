@@ -59,16 +59,16 @@ class Navigation extends Component{
             <Nav className="me-auto">
               {/* <Nav.Link className='home' href="/" onClick={this.handleClick} style={{background: background, color: color}}>HOME</Nav.Link> */}
               <li>
-                <Link to='/'> Home</Link>
+                <Link className = 'home' to='/'> HOME</Link>
                 </li>
                 <li>
-                <Link to='/projects'> Projects</Link>
+                <Link className = 'projects' to='/projects'> PROJECTS</Link>
                 </li>
                 <li>
-                <Link to='/about'> About</Link>
+                <Link className = 'about' to='/about'> ABOUT</Link>
                 </li>
                 <li>
-                <Link to='/contact'> Contact</Link>
+                <Link className = 'contact' to='/contact'> CONTACT</Link>
                 </li>
 
               {/* <Nav.Link className='home' href="/">HOME</Nav.Link>
