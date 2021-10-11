@@ -98,6 +98,16 @@
  
 }
 
-a:hover, .button-projects:hover{
+.button-resume{
+    background-color:rgb(168, 224, 226) !important;
+    font-family: patrickHand;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color:black;
+}
+
+a:hover, .button-projects:hover, .button-resume:hover{
     color: red !important;
+    border-bottom: none !important;
 }

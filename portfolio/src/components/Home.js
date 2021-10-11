@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react'
 
 import Navigation from './Navbar';
+import ResumeBttn from './ResumeButton';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,24 +13,39 @@ import backgroundLake from '../images/lakebackground.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/home.css';
 import portfolioPic from '../images/portfolio-pic.jpeg';
+import Modal from 'react-bootstrap/Modal';
 
-
-function Example() {
-    const [show, setShow] = useState(false);
-  
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-}
 
 class Home extends Component{
 
-    
+    constructor(props) {
+        super(props);
+  
+        this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+        this.state = {
+             open:true
+
+           };
+      }
+
+  openModal() {
+     this.setState({open: this.props.openModal});
+  }
+
+  closeModal() {
+     this.setState({open:false});
+  }
+
     render(){
         return(
         
             <>
-                         <Image className ='lake-img' src={backgroundLake} />
+
+            <div className='img-container'>
+            <Image className ='lake-img' src={backgroundLake} />
+            </div>
+          
 
            <Container className='home-container'>
                     <Row>
@@ -50,9 +66,13 @@ class Home extends Component{
                                     <Card.Text className='location-title'>
                                     San Diego, CA
                                     </Card.Text>
+
                                     <Button className='button-projects'>
                                     <Link className = 'projects-button' to='/projects'> PROJECTS</Link>
                                     </Button>{' '}
+
+                                    <ResumeBttn></ResumeBttn>
+                                    
                                 </Card.Body>
                                 </Card>
                             </Col>
@@ -61,6 +81,18 @@ class Home extends Component{
                            
                             
                         </Row>
+
+                    <Modal open={this.state.open}  animation={false}>
+                        <Modal.Header closeButton>
+                        <Modal.Title>Modal heading</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                        <Modal.Footer>
+                        <Button variant="secondary" onClick={this.closeModal}>
+                            Close
+                        </Button>
+                        </Modal.Footer>
+                    </Modal>
                     </Container>
                    
                    
