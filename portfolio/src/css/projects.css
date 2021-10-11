@@ -1,5 +1,19 @@
 
 
+@font-face {
+    font-family: patrickHand;
+    src: url("./fonts/PatrickHand-Regular.woff");
+    font-weight: bold;
+   
+}
+
+@font-face {
+    font-family: rockSalt;
+    src: url("./fonts/RockSalt-Regular.woff");
+    font-weight: bold;
+   
+}
+
 .row-container{
     max-width: 100%;
     padding-left: 15%;
@@ -29,6 +43,9 @@
 
 .projects-title{
     padding-top: 10%;
+    text-align: center;
+    font-family: patrickHand;
     font-size: 50px;
-    color: white;
+    text-decoration: none;
+    color: darkblue;
 }
