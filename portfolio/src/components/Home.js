@@ -44,8 +44,8 @@ class Home extends Component{
 
             <div className='img-container'>
             <Image className ='lake-img' src={backgroundLake} />
+           
             </div>
-          
 
            <Container className='home-container'>
                     <Row>
@@ -97,6 +97,7 @@ class Home extends Component{
                    
                    
                 </Container>
+               
             </>
         )
     }
