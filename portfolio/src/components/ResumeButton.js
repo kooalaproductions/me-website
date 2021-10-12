@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import SinglePage from './SinglePage';
-
+import AllPages from './AllPages';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/about.css';
 
@@ -24,7 +23,7 @@ export default function ResumeBttn() {
           <Modal.Header closeButton>
             <Modal.Title>My Resume</Modal.Title>
           </Modal.Header>
-          <Modal.Body><SinglePage></SinglePage></Modal.Body>
+          <Modal.Body><AllPages pdf="../../Ernesto-Sanchez-Santana.pdf"></AllPages></Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
               Close
