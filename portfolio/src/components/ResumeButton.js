@@ -19,7 +19,7 @@ export default function ResumeBttn() {
           Resume 
         </Button>
   
-        <Modal show={show} onHide={handleClose} animation={false}>
+        <Modal className="resume-modal" show={show} onHide={handleClose} animation={false}>
           <Modal.Header closeButton>
             <Modal.Title>My Resume</Modal.Title>
           </Modal.Header>

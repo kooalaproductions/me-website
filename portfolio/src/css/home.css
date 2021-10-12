@@ -120,3 +120,7 @@ a:hover, .button-projects:hover, .button-resume:hover{
     color: red !important;
     border-bottom: none !important;
 }
+
+.modal-content{
+    width:128%;
+}
