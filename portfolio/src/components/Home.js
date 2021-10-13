@@ -10,6 +10,7 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom'
 import Image from 'react-bootstrap/Image'
 import backgroundLake from '../images/lakebackground.jpeg';
+import coolWaterone from '../images/coolwaterone.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/home.css';
 import portfolioPic from '../images/portfolio-pic.jpeg';
@@ -43,7 +44,7 @@ class Home extends Component{
             <>
 
             <div className='img-container'>
-            <Image className ='lake-img' src={backgroundLake} />
+            <Image className ='lake-img' src={coolWaterone} />
            
             </div>
 

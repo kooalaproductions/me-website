@@ -12,6 +12,9 @@ import mheelsImage from '../images/mheels-pic.png';
 import beermeImage from '../images/beerme-pic.png';
 import pregameImage from '../images/pre-game-pic.png';
 import trainImage from '../images/train-pic.png';
+import Image from 'react-bootstrap/Image';
+import coolWaterone from '../images/coolwaterone.jpeg';
+import backgroundLake from '../images/lakebackground.jpeg';
 
 
 
@@ -20,6 +23,11 @@ class Projects extends Component{
         return(
         
             <>
+
+<div className='img-container'>
+            <Image className ='lake-img' src={backgroundLake} />
+           
+            </div>
            <Container className="full-body-projects-container">
                     <Row>
                     <Navigation></Navigation>

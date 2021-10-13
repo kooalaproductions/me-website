@@ -47,5 +47,8 @@
     font-family: patrickHand;
     font-size: 50px;
     text-decoration: none;
-    color: darkblue;
+    color: white;
+    position: relative;
+    z-index: 1;
+    -webkit-text-stroke: 0.8px black;
 }
