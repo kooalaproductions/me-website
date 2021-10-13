@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Navigation from './Navbar';
+import SkillsBar from './SkillsBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/about.css';
 
@@ -47,6 +48,7 @@ class About extends Component{
                              </Col>
                              <Col>
                              My Skills
+                             <SkillsBar></SkillsBar>
                              </Col>
                          </Row>
 

@@ -16,7 +16,7 @@
 
 .row-container{
     max-width: 100%;
-    padding-left: 15%;
+    padding-left: 12%;
     
 }
 .card{
@@ -52,4 +52,15 @@
     position: relative;
     z-index: 1;
     -webkit-text-stroke: 0.8px black;
+}
+
+.project-button{
+    background-color: rgb(148, 220, 248);
+    color: black;
+    width: 35%;
+}
+
+.project-button:hover{
+    background-color: azure;
+    color:rgb(240, 172, 172);
 }

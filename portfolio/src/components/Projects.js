@@ -51,8 +51,8 @@ class Projects extends Component{
                                 Mheels is the one stop app to find your nearest food-truck / food on cart that could be around your corner. Ability to use google maps for directions to food locaiton.
                                 </Card.Text>
                                 <Container className="button-container">
-                                <Button onClick={()=> window.open("https://mheels.herokuapp.com/", "_blank")}>Live Project</Button>
-                                <Button onClick={()=> window.open("https://github.com/rgonz166/project3", "_blank")}>Github</Button>
+                                <Button className="project-button" onClick={()=> window.open("https://mheels.herokuapp.com/", "_blank")}>Live Project</Button>
+                                <Button className="project-button" onClick={()=> window.open("https://github.com/rgonz166/project3", "_blank")}>Github</Button>
                                 </Container>
                                 
                                 </Card.Body>
@@ -67,8 +67,8 @@ class Projects extends Component{
                                 Social Media Application that helps liquour enthusiasts share their love for a certain brand of alchohol. They will be able to create post and read facts about alchohol.
                                 </Card.Text>
                                 <Container className="button-container">
-                                <Button onClick={()=> window.open("http://beerme-ucsd.herokuapp.com/", "_blank")}>Live Project</Button>
-                                <Button onClick={()=> window.open("https://github.com/rgonz166/BeerMe", "_blank")}>Github</Button>
+                                <Button className="project-button" onClick={()=> window.open("http://beerme-ucsd.herokuapp.com/", "_blank")}>Live Project</Button>
+                                <Button className="project-button" onClick={()=> window.open("https://github.com/rgonz166/BeerMe", "_blank")}>Github</Button>
                                 </Container>
                                 </Card.Body>
                             </Card>
@@ -84,8 +84,8 @@ class Projects extends Component{
                                 Pre-Game was created with the intention of you having a great start to your night. Enter the venue/location you'll attend to find all the nearby local spots.
                                 </Card.Text>
                                 <Container className="button-container">
-                                <Button onClick={()=> window.open("https://rgonz166.github.io/Pre-Game/", "_blank")}>Live Project</Button>
-                                <Button onClick={()=> window.open("https://github.com/rgonz166/Pre-Game", "_blank")}>Github</Button>
+                                <Button className="project-button" onClick={()=> window.open("https://rgonz166.github.io/Pre-Game/", "_blank")}>Live Project</Button>
+                                <Button className="project-button" onClick={()=> window.open("https://github.com/rgonz166/Pre-Game", "_blank")}>Github</Button>
                                 </Container>
                                 </Card.Body>
                             </Card>
@@ -100,8 +100,8 @@ class Projects extends Component{
                                 If there was a mistake the user can simply remove it.
                                 </Card.Text>
                                 <Container className="button-container">
-                                <Button onClick={()=> window.open("https://kooalaproductions.github.io/TrainTime/", "_blank")}>Live Project</Button>
-                                <Button onClick={()=> window.open("https://github.com/kooalaproductions/TrainTime", "_blank")}>Github</Button>
+                                <Button className="project-button" onClick={()=> window.open("https://kooalaproductions.github.io/TrainTime/", "_blank")}>Live Project</Button>
+                                <Button className="project-button" onClick={()=> window.open("https://github.com/kooalaproductions/TrainTime", "_blank")}>Github</Button>
                                 </Container>
                                 </Card.Body>
                             </Card>
