@@ -47,7 +47,6 @@ class About extends Component{
                              </div>
                              </Col>
                              <Col>
-                             My Skills
                              <SkillsBar></SkillsBar>
                              </Col>
                          </Row>
