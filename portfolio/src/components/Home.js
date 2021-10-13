@@ -68,7 +68,7 @@ class Home extends Component{
                                     </Card.Text>
 
                                     <Button className='button-projects'>
-                                    <Link className = 'projects-button' to='/projects'> PROJECTS</Link>
+                                    <Link className = 'projects-button' to='/projects'> Projects</Link>
                                     </Button>{' '}
 
                                     <ResumeBttn></ResumeBttn>

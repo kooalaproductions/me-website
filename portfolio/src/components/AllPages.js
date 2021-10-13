@@ -19,9 +19,10 @@ export default function AllPages(props) {
         file={file}
         onLoadSuccess={onDocumentLoadSuccess}
       >
-        <Page pageNumber={pageNumber} />
+        {[1,2].map(page => (
+            <Page pageNumber={page} />
+        ))}
       </Document>
-      <p>Page {pageNumber} of {numPages}</p>
     </div>
   );
 }

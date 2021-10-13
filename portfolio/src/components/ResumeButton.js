@@ -16,7 +16,7 @@ export default function ResumeBttn() {
     return (
       <>
         <Button className='button-resume' variant="primary" onClick={handleShow}>
-          Resume 
+          Resume
         </Button>
   
         <Modal className="resume-modal" show={show} onHide={handleClose} animation={false}>

@@ -97,6 +97,7 @@
 
 .button-projects{
     background-color:rgb(168, 224, 226) !important;
+    width: 24%;
 }
 .projects-button{
     font-family: patrickHand;
@@ -104,6 +105,7 @@
     margin: 10px;
     text-decoration: none;
     color:black;
+    
  
 }
 
@@ -114,6 +116,7 @@
     margin: 10px;
     text-decoration: none;
     color:black;
+    width: 24%;
 }
 
 a:hover, .button-projects:hover, .button-resume:hover{
