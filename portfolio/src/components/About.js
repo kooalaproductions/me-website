@@ -23,8 +23,18 @@ class About extends Component{
                      <Container>
                          <Row>
                              <Col>
-                             <h1 className='about-title'>ABOUT PAGE</h1>
+                             <h1 className='about-title'>ABOUT ME</h1>
                                  </Col>
+                         </Row>
+                         <Row>
+                             <Col>
+
+                             Thank you for visiting my portfolio. I am currently looking for jobs in computer science. 
+
+                             </Col>
+                             <Col>
+                             My Skills
+                             </Col>
                          </Row>
                      </Container>
                     
