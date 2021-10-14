@@ -41,7 +41,7 @@
     background: black; /* Just to visualize the extent */
 }
 .home-container{
-    display: inline-block;
+  display: inline-block;
   overflow: hidden;
   position: relative;
   width: 100%;

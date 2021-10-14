@@ -3,7 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Navigation from './Navbar';
+import Image from 'react-bootstrap/Image';
 import SkillsBar from './SkillsBar';
+import aboutBackground from '../images/about-background.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/about.css';
 
@@ -14,13 +16,18 @@ class About extends Component{
     render(){
         return (
             <>
+             <div className='about-background-container'>
+                        <Image className ='about-image' src={aboutBackground} />
+                    
+                        </div>
             <Container>
+
+           
                      <Row>
                      <Navigation></Navigation>
                      </Row>   
                      <Row></Row>
-                   
- 
+                     
                      <Container>
                          <Row>
                              <Col>

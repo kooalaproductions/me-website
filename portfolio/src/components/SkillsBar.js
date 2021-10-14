@@ -2,12 +2,6 @@ import React, { Component } from 'react'
 import { SkillBar } from 'react-skills';
 
 
-
-
-
-
-
-
  
 class SkillsBar extends Component{
 
@@ -15,7 +9,7 @@ class SkillsBar extends Component{
         return (
             <>
 
-                <SkillBar name="React" level={68} color="#04c2c9" />
+                <SkillBar name="React" level={68} color="#04c2c9"/>
                 <br></br>
                 <SkillBar name="HTML" level={80} color="#04c2c9" />
                 <br></br>
