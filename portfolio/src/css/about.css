@@ -1,4 +1,16 @@
+@font-face {
+    font-family: kalam;
+    src: url("./fonts/Kalam-Bold.ttf");
+    
+   
+}
 
+@font-face {
+    font-family: patrickHand;
+    src: url("./fonts/PatrickHand-Regular.woff");
+    font-weight: bold;
+   
+}
 
 .about-title{
     padding-top: 10%;
@@ -33,3 +45,27 @@ input[name="React"] {
     opacity: 0.5;
    
 } 
+
+.about-title{
+    text-align: center;
+    font-family: patrickHand;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 1;
+    -webkit-text-stroke: 0.8px black;
+}
+.intro{
+    color:white;
+    font-family: kalam;
+    font-size: 25px;
+    -webkit-text-stroke: 0.8px black;
+}
+
+.future{
+    color:white;
+    font-family: kalam;
+    font-size: 25px;
+    -webkit-text-stroke: 0.8px black;
+}
