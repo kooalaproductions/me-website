@@ -1,119 +1,57 @@
-import React, { Component } from 'react'
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Navigation from './Navbar';
-import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/contact.css';
 
+export const Contact = () => {
+  const form = useRef();
 
- 
-class Contact extends Component{
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    constructor(props) {
-        super(props);
-        this.state = {
-          name: '',
-          email: '',
-          subject:'',
-          message: ''
-        }
-    }
+    emailjs.sendForm('service_ckrdzb9', 'template_dn82f11', form.current, 'user_v1LaNe51Mf1gtwqeHKPH7')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
-    onNameChange(event) {
-        this.setState({name: event.target.value})
-    }
+  return (
 
-    onEmailChange(event) {
-        this.setState({email: event.target.value})
-    }
+    <>
+    <Container>
 
-    onSubjectChange(event) {
-        this.setState({subject: event.target.value})
-    }
 
-    onMsgChange(event) {
-        this.setState({message: event.target.value})
-    }
-
-    submitEmail(e){
-        e.preventDefault();
-        axios({
-          method: "POST", 
-          url:"/send", 
-          data:  this.state
-        }).then((response)=>{
-          if (response.data.status === 'success'){
-              alert("Message Sent."); 
-              this.resetForm()
-          }else if(response.data.status === 'fail'){
-              alert("Message failed to send.")
-          }
-        })
-}
-
-resetForm(){
-        this.setState({name: '', email: '',subject:'', message: ''})
-}
-    render(){
-        return (
-            <>
-            <Container>
                      <Row>
-                     <Navigation></Navigation>
-                     </Row>   
-                     <Row></Row>
-                   
- 
-                     <div className="section">
-                        <div className="container-email">
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <div className="section-title">
-                                        <form id="contact-form" onSubmit={this.submitEmail.bind(this)} 
-                                            method="POST">
-                                        <div className="form-group">
-                                        <div className="row">
-                                        <div className="col-md-6">
-                                            <input placeholder = "Name"  id="name" type="text" 
-                                            className="form-control" required value={this.state.name} 
-                                            onChange={this.onNameChange.bind(this)}/>
-                                        </div>
-                                        <div className="col-md-6">
-                                            <input placeholder = "Email"  id="email" type="email"
-                                            className="form-control" aria-describedby="emailHelp"
-                                            required value={this.state.email} onChange=
-                                            {this.onEmailChange.bind(this)}/>
-                                        </div>
-                                        </div>
-                                        </div>
-                                        <div className="form-group">
-                                            <input placeholder = "Subject"  id="subject" type="text"
-                                            className="form-control" required value={this.state.subject}
-                                            onChange={this.onSubjectChange.bind(this)}/>
-                                        </div>
-                                        <div className="form-group">
-                                            <textarea placeholder = "Message"  id="message" 
-                                            className="form-control" rows="1" 
-                                            required value={this.state.message}
-                                            onChange= {this.onMsgChange.bind(this)}/>
-                                        </div>
-                                        <button type="submit" className="primary-btn submit">Submit</button>
-                                        </form>
-                                    </div>
-                                </div>
+                        <Navigation></Navigation>
+                        </Row>  
 
-                            </div>
+                        <Container>
+                            <Row>
+                                <Col className='container-email'>
+                                <form ref={form} onSubmit={sendEmail}>
+                                <label>Name</label>
+                                <input type="text" name="from_name" id="from_name"/>
+                                <label>Email</label>
+                                <input type="email" name="user_email" />
+                                <label>Message</label>
+                                <textarea name="message" /> 
+                                <input type="submit" value="Send" />
+                                </form>
+                                </Col>
+                           
+                            </Row>
 
-                </div>
-            </div>
-                    
-                 </Container>
-             </>
-          );
-        };
-         
-    }
- 
-export default Contact;
+                                 
+                            </Container> 
+       
+
+    </Container>
+   </>
+  );
+};
