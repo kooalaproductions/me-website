@@ -22,6 +22,9 @@
   
 }
 
+.navbar-container{
+    margin: inherit;
+}
 .me-auto{
     position: absolute;
     right: 10%;   

@@ -50,7 +50,7 @@ class Navigation extends Component{
         return(
             
         <Navbar bg="light" expand="lg" fixed="top">
-        <Container>
+        <Container className='navbar-container'>
           <Navbar.Brand href="/" className='header-llc'>PORTFOLIO</Navbar.Brand>
           <GitHubIcon className="github" onClick={()=> window.open("https://github.com/kooalaproductions", "_blank")}></GitHubIcon>
           <LinkedInIcon className="linkedin" onClick={()=> window.open("https://www.linkedin.com/in/ernesto-sanchez-sd/", "_blank")}></LinkedInIcon>
