@@ -45,7 +45,6 @@ class About extends Component{
                              <br></br>
                              
                              <div className='future'>
-                             I will continue working on personal projects to continuously work on my skills.
                              My goal is to become a Lead Software Developer or a Senior I.T. Engineer.
                              A programming language that I hope to learn is python because I want to
                              expand my knowledge and be flexible in any job position. I will work on python projects and post them on my portfolio in the future. 

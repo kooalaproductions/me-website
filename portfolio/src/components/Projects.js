@@ -48,7 +48,7 @@ class Projects extends Component{
                                 <Card.Body>
                                 <Card.Title>Mheels</Card.Title>
                                 <Card.Text>
-                                Mheels is the one stop app to find your nearest food-truck / food on cart that could be around your corner. Ability to use google maps for directions to food locaiton.
+                                Mheels is the one stop app to find your nearest food-truck / food on cart that could be around your corner. Ability to use google maps for directions to food location.
                                 </Card.Text>
                                 <Container className="button-container">
                                 <Button className="project-button" onClick={()=> window.open("https://mheels.herokuapp.com/", "_blank")}>Live Project</Button>
@@ -64,7 +64,7 @@ class Projects extends Component{
                                 <Card.Body>
                                 <Card.Title>Beer Me</Card.Title>
                                 <Card.Text>
-                                Social Media Application that helps liquour enthusiasts share their love for a certain brand of alchohol. They will be able to create post and read facts about alchohol.
+                                Social Media Application that helps liquor enthusiasts share their love for a certain brand of alchohol. They will be able to create post and read facts about alchohol.
                                 </Card.Text>
                                 <Container className="button-container">
                                 <Button className="project-button" onClick={()=> window.open("http://beerme-ucsd.herokuapp.com/", "_blank")}>Live Project</Button>
