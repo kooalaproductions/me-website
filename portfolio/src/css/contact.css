@@ -1,3 +1,36 @@
+@font-face {
+    font-family: kalam;
+    src: url("./fonts/Kalam-Bold.ttf");
+    
+   
+}
+
+@font-face {
+    font-family: patrickHand;
+    src: url("./fonts/PatrickHand-Regular.woff");
+    font-weight: bold;
+   
+}
+
+.contact-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    overflow: auto;
+    background: black;
+}
+
+.contact-img{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
 
 .contact-body{
     text-align: center;
@@ -20,7 +53,7 @@ margin-right: auto;
     height: 300px;
 } */
 .container-email{
-    padding-top:120px;
+    padding-top:20%;
 }
 
 .name-field, .email-field{
@@ -49,4 +82,14 @@ margin-right: auto;
 }
 .submit-button{
     width: 20%;
+}
+
+.card-title{
+    font-family: patrickHand;
+    font-size: 50px;
+}
+
+.name-label, .email-label, .message-label{
+    font-family: kalam;
+    font-size: 20px;
 }

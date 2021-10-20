@@ -5,7 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Navigation from './Navbar';
-import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image'
+import contactImg from '../images/contact-page-background.jpeg';
 import { useHistory } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/contact.css';
@@ -34,6 +35,11 @@ export const Contact = () => {
   return (
 
     <>
+    <div className='contact-background'>
+                    <Image className ='contact-img' src={contactImg} />
+                        
+                </div>
+
     <Container>
 
 
