@@ -6,8 +6,29 @@
     
 }
 
+/* .contact-body{
+    width: 300px;
+    height: 300px;
+} */
 .container-email{
     padding-top:120px;
 }
 
+.name-field, .email-field{
 
+    display: inline-block;
+    text-align: right;
+    padding: 20px;
+}
+
+.email-input, .name-input, .message-area{
+    width: 100%;
+}
+
+
+.submit-field{
+    text-align: center;
+}
+.submit-button{
+    width: 20%;
+}
