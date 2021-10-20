@@ -1,0 +1,28 @@
+@font-face {
+    font-family: patrickHand;
+    src: url("./fonts/PatrickHand-Regular.woff");
+    font-weight: bold;
+   
+}
+
+@font-face {
+    font-family: rockSalt;
+    src: url("./fonts/RockSalt-Regular.woff");
+    font-weight: bold;
+   
+}
+@font-face {
+    font-family: kalam;
+    src: url("./fonts/Kalam-Bold.ttf");
+    
+   
+}
+
+.thankyou-p{
+    padding-top: 25%;
+    text-align: center;
+    font-family: kalam;
+    color:rgb(161, 168, 230);
+    -webkit-text-stroke: 1px black;
+    font-size: 100px;
+}

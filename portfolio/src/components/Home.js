@@ -83,7 +83,7 @@ class Home extends Component{
                            
                             
                         </Row>
-
+{/* 
                     <Modal open={this.state.open}  animation={false}>
                         <Modal.Header closeButton>
                         <Modal.Title>Modal heading</Modal.Title>
@@ -94,7 +94,7 @@ class Home extends Component{
                             Close
                         </Button>
                         </Modal.Footer>
-                    </Modal>
+                    </Modal> */}
                     </Container>
                    
                    

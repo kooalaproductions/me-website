@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Navigation from './Navbar';
+import Button from 'react-bootstrap/Button';
+import { useHistory } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/contact.css';
 
@@ -17,10 +19,17 @@ export const Contact = () => {
     emailjs.sendForm('service_ckrdzb9', 'template_dn82f11', form.current, 'user_v1LaNe51Mf1gtwqeHKPH7')
       .then((result) => {
           console.log(result.text);
+          redirect();
       }, (error) => {
           console.log(error.text);
       });
   };
+
+  let history = useHistory();
+
+  const redirect = () => {
+    history.push('/thankyouemail');
+  }
 
   return (
 
@@ -36,7 +45,7 @@ export const Contact = () => {
                             <Row>
                                 <Col className='container-email'>
                                 
-                                <Card style={{ width: '50%'}}>
+                                <Card className='whole-card' style={{ width: '50%'}}>
                                     <Card.Body className='contact-body'>
                                         <Card.Title>Contact</Card.Title>
                                         <form ref={form} onSubmit={sendEmail}>
@@ -50,11 +59,13 @@ export const Contact = () => {
                                     </div>
                                     <div className='message-field'>
                                         <label className='message-label'>Message</label>
-                                        <textarea  name="message" className='message-area'/> 
+                                        <textarea  name="message" className='message-area' style={{ height: '115px'}}/> 
                                     </div>
                                     <div className='submit-field'>
-                                    <input className='submit-button' type="submit" value="Send" />
+                                    <input className='submit-button' type="submit" value="Send"/>
                                     </div>
+                                     
+
                                  
                                 </form>
                                     </Card.Body>

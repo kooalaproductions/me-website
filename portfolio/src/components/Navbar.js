@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from "jquery";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Navbar.css';
 import Navbar from 'react-bootstrap/Navbar';

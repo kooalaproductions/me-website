@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import About from './components/About';
 import {Contact} from './components/Contact';
+import ThankYouEmail from './components/ThankYouEmail';
 
 
 
@@ -26,6 +27,10 @@ function App() {
           </Route>
           <Route exact path="/contact">
            <Contact></Contact>
+          </Route>
+
+          <Route exact path="/thankyouemail">
+            <ThankYouEmail></ThankYouEmail>
           </Route>
           
         </Switch>
