@@ -80,6 +80,7 @@ margin-right: auto;
 .submit-field{
     text-align: center;
 }
+
 .submit-button{
     width: 20%;
 }
@@ -92,4 +93,8 @@ margin-right: auto;
 .name-label, .email-label, .message-label{
     font-family: kalam;
     font-size: 20px;
+}
+
+input[type=submit]{
+    font-family: kalam;
 }
